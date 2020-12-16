@@ -18,13 +18,12 @@ class Stream_Reader():
         timestamp = 'timestamp'
         
         secondsToKeep = 120
-        shouldCleanLastMinuteData = False
         timeLastCleaned = datetime.timestamp(datetime.now())
         
         while not terminate_thread():
             line = process.stdout.readline()
 
-            # Handling corrupted lines by catching UnicodeDecodeError (and ignoring)
+            # Handling corrupted lines by catching UnicodeDecodeError and json.JSONDecodeError (and ignoring)
             try:
                 json_line = json.loads(line)
                 
