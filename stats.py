@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 
-class Stats:
+class Stats():
     def __init__(self):
         # Two int dict for the counting of events and words - total
         self.events_counter_int, self.data_words_counter_int = defaultdict(int), defaultdict(int)
