@@ -1,4 +1,3 @@
-Hello Panda :)
 
 To run the project, please run 'main.py' using Python 3+
 BlackBox "generator-macosx-amd64" should be in the same folder as scripts.
