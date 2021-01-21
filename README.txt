@@ -1,4 +1,3 @@
-
 To run the project, please run 'main.py' using Python 3+
 BlackBox "generator-macosx-amd64" should be in the same folder as scripts.
 Stats can be viewed in web browser at localhost:8000
